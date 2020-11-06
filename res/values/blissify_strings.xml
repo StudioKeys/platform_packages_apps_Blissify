@@ -181,4 +181,8 @@
      <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
      <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
 
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Show charging current, voltage, wattage and battery temperature on lockscreen while charging</string>
+
 </resources>
