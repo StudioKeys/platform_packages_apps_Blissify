@@ -39,6 +39,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import com.bliss.support.preferences.SystemSettingListPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.bliss.udfps.UdfpsUtils;
 
 import com.bliss.support.preferences.SystemSettingSwitchPreference;
 import com.bliss.support.preferences.CustomSeekBarPreference;
@@ -109,6 +110,12 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         mWeather = (Preference) findPreference(KEY_WEATHER);
         mWeatherClient = new OmniJawsClient(getContext());
         updateWeatherSettings();
+
+        mUdfpsCategory = findPreference(UDFPS_CATEGORY);
+        if (!UdfpsUtils.hasUdfpsSupport(getContext())) {
+            prefSet.removePreference(mUdfpsCategory);
+        }
+
     }
 
     @Override

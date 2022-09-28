@@ -277,4 +277,8 @@
     <string name="less_boring_heads_up_title">Make heads up less annoying</string>
     <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
 
+    <!-- UDFPS Recog Animation -->
+    <string name="udfps_settings_title">UDFPS settings</string>
+    <string name="udfps_settings_summary">Settings for customizing the UDFPS</string>
+
 </resources>
