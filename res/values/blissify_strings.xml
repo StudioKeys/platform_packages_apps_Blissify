@@ -269,4 +269,8 @@
     <string name="spoofing_snapchat_title">Snapchat spoof</string>
     <string name="spoofing_snapchat_summary">Spoof Snapchat as a Pixel XL to allow original quality captures</string>
 
+    <!-- Status bar Icon Manager -->
+    <string name="statusbar_icon_manager_title">Statusbar Icon manager</string>
+    <string name="statusbar_icon_manager_summary">Control visibility of status bar icons</string>
+
 </resources>
