@@ -49,6 +49,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settings.fuelgauge.batteryusage.PowerUsageSummary;
+import com.android.internal.util.bliss.OmniJawsClient;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,12 +67,15 @@ public class Lockscreen extends SettingsPreferenceFragment implements
     private static final String UDFPS_CATEGORY = "udfps_category";
     private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
     private static final String FINGERPRINT_ERROR_VIB = "fingerprint_error_vib";
+    private static final String KEY_WEATHER = "lockscreen_weather_enabled";
 
     private Context mContext;
     private FingerprintManager mFingerprintManager;
     private SwitchPreferenceCompat mFingerprintSuccessVib;
     private SwitchPreferenceCompat mFingerprintErrorVib;
     private PreferenceCategory mUdfpsCategory;
+    private Preference mWeather;
+    private OmniJawsClient mWeatherClient;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -102,6 +106,9 @@ public class Lockscreen extends SettingsPreferenceFragment implements
             prefSet.removePreference(mFingerprintSuccessVib);
             prefSet.removePreference(mFingerprintErrorVib);
         }
+        mWeather = (Preference) findPreference(KEY_WEATHER);
+        mWeatherClient = new OmniJawsClient(getContext());
+        updateWeatherSettings();
     }
 
     @Override
@@ -120,9 +127,19 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         return false;
     }
 
+    private void updateWeatherSettings() {
+        if (mWeatherClient == null || mWeather == null) return;
+
+        boolean weatherEnabled = mWeatherClient.isOmniJawsEnabled();
+        mWeather.setEnabled(weatherEnabled);
+        mWeather.setSummary(weatherEnabled ? R.string.lockscreen_weather_summary :
+            R.string.lockscreen_weather_enabled_info);
+    }
+
     @Override
     public void onResume() {
         super.onResume();
+        updateWeatherSettings();
     }
 
     @Override
