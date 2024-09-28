@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2014-2021 The BlissRoms Project
+     Copyright 2021 xdroid, xyzprjkt
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,15 +14,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    style="@style/blissifyPreferenceMiddle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-<resources>
+    <include
+        layout="@layout/blissify_dashboard_pref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    <dimen name="default_margin">16dp</dimen>
-    <dimen name="default_padding">16dp</dimen>
-
-    <dimen name="blissify_radius">28dp</dimen>
-    <dimen name="blissify_radius_merge">5dp</dimen>
-    <dimen name="blissify_pref_horizontal_padding">16dp</dimen>
-    <dimen name="blissify_pref_horizontal_padding-negative">-16dp</dimen>
-
-</resources>
+</FrameLayout>

@@ -29,4 +29,67 @@
         <item name="android:lineHeight">15sp</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
+
+    <!-- Text Styles -->
+    <style name="blissifyTextPrimary">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+    </style>
+    <style name="blissifyTextPrimaryMedium" parent="blissifyTextPrimary">
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
+    </style>
+    <style name="blissifyTextSecondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Dashboard -->
+    <style name="blissifyDashboardPreferenceTop" parent="blissifyPreferenceTop">
+        <item name="android:layout_marginTop">@dimen/blissify_pref_horizontal_padding</item>
+    </style>
+    <style name="blissifyDashboardPreferenceBottom" parent="blissifyPreferenceBottom">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    <style name="blissifyDashboardPreferenceFull" parent="blissifyPreferenceFull">
+        <item name="android:layout_marginTop">@dimen/blissify_pref_horizontal_padding</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+    <style name="blissifyDashboardPreferenceFullAccent" parent="blissifyDashboardPreferenceFull">
+        <item name="android:background">@drawable/blissify_preference_background_full_accent</item>
+    </style>
+    <style name="blissifyDashboardPreferencePhone" parent="blissifyDashboardPreferenceTop">
+        <item name="android:background">@drawable/blissify_preference_background_phone</item>
+    </style>
+
+    <!-- General -->
+    <style name="blissifyPreferenceBase">
+        <item name="android:layout_marginStart">@dimen/blissify_pref_horizontal_padding</item>
+        <item name="android:layout_marginEnd">@dimen/blissify_pref_horizontal_padding</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+    <style name="blissifyPreferenceTop" parent="blissifyPreferenceBase">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">@drawable/blissify_preference_background_top</item>
+    </style>
+    <style name="blissifyPreferenceMiddle" parent="blissifyPreferenceBase">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:background">@drawable/blissify_preference_background_middle</item>
+    </style>
+    <style name="blissifyPreferenceBottom" parent="blissifyPreferenceBase">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/blissify_preference_background_bottom</item>
+    </style>
+    <style name="blissifyPreferenceFull" parent="blissifyPreferenceBase">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/blissify_preference_background_full</item>
+    </style>
+    <style name="blissifyPreferenceFullAccent" parent="blissifyPreferenceBase">
+        <item name="android:layout_marginTop">@dimen/blissify_pref_horizontal_padding</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/blissify_preference_background_full_accent</item>
+    </style>
+
 </resources>

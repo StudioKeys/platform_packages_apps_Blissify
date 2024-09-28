@@ -6,13 +6,19 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/blissify_dashboard_title">
+    android:title=" ">
+
+    <PreferenceCategory
+        android:title="@string/blissify_dashboard_title"
+        android:layout="@layout/blissify_preference_category">
+    </PreferenceCategory>
 
     <!-- Animations -->
     <Preference
         android:key="animations_category"
         android:title="@string/blissify_animation_title"
         android:fragment="org.blissroms.blissify.fragments.animations.Animations"
+        settings:layout="@layout/blissify_dashboard_preference_top"
         android:icon="@drawable/ic_blissify_animations" />
 
     <!-- Buttons -->
@@ -20,6 +26,7 @@
         android:key="button_settings"
         android:title="@string/button_pref_title"
         android:icon="@drawable/ic_blissify_buttons"
+        settings:layout="@layout/blissify_dashboard_preference_middle"
         android:fragment="com.android.settings.bliss.buttons.ButtonSettings"/>
 
     <!-- Gestures -->
@@ -27,6 +34,7 @@
         android:key="gestures_category"
         android:title="@string/blissify_gestures_title"
         android:fragment="org.blissroms.blissify.fragments.gestures.Gestures"
+        settings:layout="@layout/blissify_dashboard_preference_middle"
         android:icon="@drawable/ic_settings_gestures" />
 
     <!-- Lock Screen -->
@@ -34,6 +42,7 @@
         android:key="lockscreen_category"
         android:title="@string/blissify_lockscreen_title"
         android:fragment="org.blissroms.blissify.fragments.lockscreen.Lockscreen"
+        settings:layout="@layout/blissify_dashboard_preference_middle"
         android:icon="@drawable/ic_blissify_lockscreen" />
 
     <!-- Notifications -->
@@ -41,6 +50,7 @@
         android:key="notifications_category"
         android:title="@string/blissify_notifications_title"
         android:fragment="org.blissroms.blissify.fragments.notification.Notification"
+        settings:layout="@layout/blissify_dashboard_preference_middle"
         android:icon="@drawable/ic_blissify_notifications" />
 
     <!-- Power Menu
@@ -55,6 +65,7 @@
         android:key="quicksettings_category"
         android:title="@string/blissify_quicksettings_title"
         android:fragment="org.blissroms.blissify.fragments.qs.QuickSettings"
+        settings:layout="@layout/blissify_dashboard_preference_middle"
         android:icon="@drawable/ic_blissify_quicksettings" />
 
     <!-- Status bar -->
@@ -62,6 +73,7 @@
         android:key="statusbar_category"
         android:title="@string/blissify_status_bar_title"
         android:fragment="org.blissroms.blissify.fragments.statusbar.Statusbar"
+        settings:layout="@layout/blissify_dashboard_preference_middle"
         android:icon="@drawable/ic_blissify_statusbar" />
 
     <!-- Themes -->
@@ -69,6 +81,7 @@
         android:key="themes_category"
         android:title="@string/blissify_themes_title"
         android:fragment="org.blissroms.blissify.fragments.themes.ThemeSettings" 
+        settings:layout="@layout/blissify_dashboard_preference_middle"
         android:icon="@drawable/ic_blissify_themes" />
 
     <!-- Misc -->
@@ -76,6 +89,7 @@
         android:key="misc_category"
         android:title="@string/blissify_misc_title"
         android:fragment="org.blissroms.blissify.fragments.misc.Misc"
+        settings:layout="@layout/blissify_dashboard_preference_bottom"
         android:icon="@drawable/ic_blissify_miscellaneous" />
 
 </PreferenceScreen>
