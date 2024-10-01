@@ -95,4 +95,11 @@
              android:summary="@string/statusbar_colored_icons_summary"
              android:defaultValue="false" />
 
+        <!-- Bluetooth battery status -->
+        <com.bliss.support.preferences.SystemSettingSwitchPreference
+            android:key="bluetooth_show_battery"
+            android:title="@string/status_bar_bluetooth_battery_title"
+            android:summary="@string/status_bar_bluetooth_battery_summary"
+            android:defaultValue="true" />
+
 </PreferenceScreen>
