@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2024 BlissRoms Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/blissify_system_title">
+
+    <!-- Buttons -->
+    <Preference
+        android:key="button_settings"
+        android:title="@string/button_pref_title"
+        android:summary="@string/button_pref_summary"
+        android:fragment="com.android.settings.bliss.buttons.ButtonSettings"/>
+
+    <!-- Gestures -->
+    <Preference
+        android:key="gestures_category"
+        android:title="@string/blissify_gestures_title"
+        android:summary="@string/blissify_gestures_summary"
+        android:fragment="org.blissroms.blissify.fragments.gestures.Gestures" />
+
+    <!-- Misc -->
+    <Preference
+        android:key="misc_category"
+        android:title="@string/blissify_misc_title"
+        android:summary="@string/blissify_misc_summary"
+        android:fragment="org.blissroms.blissify.fragments.misc.Misc" />
+
+</PreferenceScreen>

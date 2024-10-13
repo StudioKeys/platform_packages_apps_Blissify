@@ -33,7 +33,9 @@
     <string name="blissify_powermenu_title">Power menu</string>
     <string name="blissify_quicksettings_title">Quick settings</string>
     <string name="blissify_status_bar_title">Status bar</string>
+    <string name="blissify_system_title">System</string>
     <string name="blissify_themes_title">Themes</string>
+    <string name="blissify_ui_title">User Interface</string>
     <string name="powermenu_items_title">Power menu items</string>
     <string name="flashlight_category">Flashlight</string>
     <string name="double_tap_gesture_title">Double Tap</string>
@@ -52,6 +54,15 @@
     <string name="statusbar_icons_category_title">Icons</string>
     <string name="statusbar_telephony_category_title">Telephony icons</string>
     <string name="notifications_general_category_title">General</string>
+
+    <!-- Summaries -->
+    <string name="button_pref_summary">Customize Button Settings for SW and HW keys</string>
+    <string name="blissify_animation_summary">Adjust QS Animation styles</string>
+    <string name="blissify_gestures_summary">Configure Gesture preferences</string>
+    <string name="blissify_quicksettings_summary">Adjust QuickSettings parameters</string>
+    <string name="blissify_status_bar_summary">Tune StatusBar Customizations</string>
+    <string name="blissify_themes_summary">Configure Theming according to your tastes</string>
+    <string name="blissify_misc_summary">Change parameters for System Settings</string>
 
     <!-- Status bar items -->
     <string name="statusbar_items_category">Status bar items</string>

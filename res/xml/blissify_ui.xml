@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2024 BlissRoms Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/blissify_ui_title">
+
+    <!-- Quick Settings panel -->
+    <Preference
+        android:key="quicksettings_category"
+        android:title="@string/blissify_quicksettings_title"
+        android:summary="@string/blissify_quicksettings_summary"
+        android:fragment="org.blissroms.blissify.fragments.qs.QuickSettings" />
+
+    <!-- Status bar -->
+    <Preference
+        android:key="statusbar_category"
+        android:title="@string/blissify_status_bar_title"
+        android:summary="@string/blissify_status_bar_summary"
+        android:fragment="org.blissroms.blissify.fragments.statusbar.Statusbar" />
+
+    <!-- Themes -->
+    <Preference
+        android:key="themes_category"
+        android:title="@string/blissify_themes_title"
+        android:summary="@string/blissify_themes_summary"
+        android:fragment="org.blissroms.blissify.fragments.themes.ThemeSettings" />
+
+</PreferenceScreen>
