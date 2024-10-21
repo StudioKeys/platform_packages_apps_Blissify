@@ -65,5 +65,11 @@
         android:title="@string/tint_background_title"
         android:summary="@string/tint_background_summary"
         android:defaultValue="false" />
+
+    <SwitchPreferenceCompat
+        android:key="whole_palette"
+        android:title="@string/whole_palette_title"
+        android:summary="@string/whole_palette_summary"
+        android:defaultValue="false" />
         
 </PreferenceScreen>
