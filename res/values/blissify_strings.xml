@@ -539,4 +539,8 @@
     <string name="whole_palette_title">Whole Palette</string>
     <string name="whole_palette_summary">Make Luminance and Chroma selection affect secondary colors as well</string>
 
+    <!-- PIF spoofing -->
+    <string name="pif_spoofing_title">Select PIF JSON File</string>
+    <string name="pif_spoofing_summary">Pick PIF JSON file to be used for spoofing play integrity</string>
+
 </resources>
