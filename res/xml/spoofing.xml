@@ -39,6 +39,22 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+            android:title="@string/gaming_category">
+
+        <!-- Games FPS -->
+        <com.bliss.support.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.gameprops.enabled"
+            android:title="@string/spoofing_games_title"
+            android:summary="@string/spoofing_games_summary"
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="game_props_json_file_preference"
+            android:title="@string/gameprops_load_json_title"
+            android:summary="@string/gameprops_load_json_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="spoofing_app_specific_category"
         android:title="@string/spoofing_app_specific_category">
 
@@ -47,13 +63,6 @@
             android:key="persist.sys.gphooks.enable"
             android:title="@string/spoofing_photos_title"
             android:summary="@string/spoofing_photos_summary"
-            android:defaultValue="false" />
-
-        <!-- Games fps -->
-        <com.bliss.support.preferences.SystemPropertySwitchPreference
-            android:key="persist.sys.gamehooks.enable"
-            android:title="@string/spoofing_games_title"
-            android:summary="@string/spoofing_games_summary"
             android:defaultValue="false" />
 
         <!-- Snapchat -->
