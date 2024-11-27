@@ -38,6 +38,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import com.bliss.support.preferences.SystemPropertySwitchPreference;
+import org.blissroms.blissify.utils.DeviceUtils;
 
 @SearchIndexable
 public class Spoofing extends SettingsPreferenceFragment implements
@@ -238,6 +239,9 @@ public class Spoofing extends SettingsPreferenceFragment implements
             public List<String> getNonIndexableKeys(Context context) {
                 List<String> keys = super.getNonIndexableKeys(context);
                 final Resources resources = context.getResources();
+                if (DeviceUtils.isCurrentlySupportedPixel()) {
+                    keys.add(KEY_PIXEL_PROPS);
+                }
                 return keys;
             }
         };
